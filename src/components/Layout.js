@@ -1,11 +1,11 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
 
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
-import './all.sass'
+import './sass/all.sass';
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -20,9 +20,9 @@ const TemplateWrapper = ({ children }) => (
       }
     `}
     render={data => (
-      <div>
+      <div class="site">
         <Helmet>
-          <html lang="en" />
+          <html lang="en" className="has-background-black" />
           <title>{data.site.siteMetadata.title}</title>
           <meta
             name="description"
@@ -58,13 +58,17 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans"
+            rel="stylesheet"
+          />
         </Helmet>
         <Navbar />
-        <div>{children}</div>
+        <main className="has-background-black has-text-light">{children}</main>
         <Footer />
       </div>
     )}
   />
-)
+);
 
-export default TemplateWrapper
+export default TemplateWrapper;

@@ -1,0 +1,54 @@
+@import './_theme.sass'
+@import './_variables.sass'
+html
+  min-height: 100%;
+
+body
+  height: 100%;
+  font-family: 'Noto Sans', sans-serif !important
+
+h1, h2, h3, h4, nav, .blog-link, .btn, .button
+  font-family: 'Inconsolata', monospace !important
+
+.site
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  main
+    flex: 1;
+
+.label
+  color: $white;
+
+.blog-link
+  background-color: $primary;
+  color: $white;
+  padding: 0 0.25em;
+  transform: skewY($primary-tilt);
+  max-width: 75%;
+  margin-bottom: 1em;
+  *
+    text-decoration: none !important;
+    transform: skewY($primary-tilt-reverse);
+
+.title
+  &-container
+    display: flex;
+    line-height: 1;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+  &-heading, &-subheading
+    color: $white;
+    line-height: 1;
+    padding: 0.25em 0.5em;
+  &-heading
+    transform: skewY(2deg);
+    &__background
+      background-color: $primary;
+      transform: skewY(-2deg);
+  &-subheading
+    transform: skewY(-1deg) translateX(10%);
+    &__background
+      background-color: $primary;
+      transform: skewY(1deg) translateX(-10%);
