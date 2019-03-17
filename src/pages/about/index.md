@@ -4,6 +4,4 @@ path: /about
 title: About Me
 ---
 
-At the end of May in 2017 I wrote my first lines of code- a 'Hello World' program in Ruby- and realised that I'd found something I'd been looking for my entire life.
-
-Before becoming a developer I was an academic theologian with a particular interest in political communities and virtue-based ethics.
+I'm Imogen, a web developer based in Brighton, UK. By day I do full-stack Javascript development; by night I dabble in Ruby Clojure, and pretending I know how to use Twitter. I like to write about coding, learning, and the intersection of software development and ethical philosophy.

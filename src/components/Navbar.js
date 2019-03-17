@@ -10,7 +10,7 @@ const Navbar = class extends React.Component {
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(
       document.querySelectorAll('.navbar-burger'),
-      0
+      0,
     );
     // Check if there are any navbar burgers
     if ($navbarBurgers.length > 0) {
@@ -58,12 +58,6 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/about">
                 About
               </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
             </div>
             <div className="navbar-end has-text-centered">
               <a
@@ -80,7 +74,6 @@ const Navbar = class extends React.Component {
                   style={{ width: '1em', height: '1em' }}
                 />
               </a>
-
               <a
                 className="navbar-item"
                 href="https://github.com/i-hardy"
