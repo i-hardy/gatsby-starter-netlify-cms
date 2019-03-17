@@ -1,7 +1,6 @@
 ---
 templateKey: 'index-page'
 title: 'git commitment issues'
-image: /img/home-jumbotron.jpg
 subheading: ethics and Javascript development
 heading: none
 description: >-

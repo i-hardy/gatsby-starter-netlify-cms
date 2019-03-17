@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import logo from '../img/logo.svg';
+import rss from '../img/social/rss.svg';
 import github from '../img/social/github.svg';
 import twitter from '../img/social/twitter.svg';
 
@@ -60,6 +61,20 @@ const Navbar = class extends React.Component {
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
+              <a
+                className="navbar-item"
+                title="RSS Feed"
+                href="/rss.xml"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="fas fa-lg"
+                  src={rss}
+                  alt="RSS feed"
+                  style={{ width: '1em', height: '1em' }}
+                />
+              </a>
               <a
                 className="navbar-item"
                 title="twitter"
